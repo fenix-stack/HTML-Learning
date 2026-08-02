@@ -1,0 +1,21 @@
+.article {
+background-color: cornflowerblue;
+}
+
+.article-heading {
+font-size: 36px;
+text-align: center;
+}
+
+.article-text {
+font-size: 24px;
+line-height: 1.2em;
+text-align: justify;
+color: blue;
+text-decoration: underline;
+cursor: pointer;
+}
+
+.btn {
+  text-transform: uppercase
+}

@@ -4,156 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна сторінка</title>
-    <style>
-      /* Специфічність селекторів:
-      тег:  001
-      клас: 010
-      айді: 100 */
-
-      p {
-        color: blue;
-      }
-
-      #title1 {
-        color: rgb(76, 151, 32);
-      }
-
-      .red-text {
-        color: green;
-        background-color: rgb(211, 219, 219);
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <!-- шістнадцятирична система:
    0-9 a, b, c, d, e, f -->
 
   <body>
-    <!-- ul>(li>a[href=#title$]{До заголовку $})*10 -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#title1">До заголовку 1</a></li>
-          <li><a href="#title2">До заголовку 2</a></li>
-          <li><a href="#title3">До заголовку 3</a></li>
-          <li><a href="#title4">До заголовку 4</a></li>
-          <li><a href="#title5">До заголовку 5</a></li>
-          <li><a href="#title6">До заголовку 6</a></li>
-          <li><a href="#title7">До заголовку 7</a></li>
-          <li><a href="#title8">До заголовку 8</a></li>
-          <li><a href="#title9">До заголовку 9</a></li>
-          <li><a href="#title10">До заголовку 10</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- (article.article>h2{Заголовок $}.article-heading+p.article-text>lorem20)*3 -->
+    <article class="article">
+      <h2 class="article-heading">Заголовок 1</h2>
+      <p class="article-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, culpa
+        quo! Sequi nemo odio itaque labore fugiat suscipit, dolore fugit.
+      </p>
+    </article>
+    <article class="article">
+      <h2 class="article-heading">Заголовок 2</h2>
+      <p class="article-text">
+        Eligendi neque tenetur alias fuga aut quo iusto, suscipit quis!
+        Explicabo sunt nesciunt ea dignissimos, temporibus molestias inventore
+        corporis et.
+      </p>
+    </article>
+    <article class="article">
+      <h2 class="article-heading">Заголовок 3</h2>
+      <p class="article-text">
+        Deserunt fuga veniam odit quasi repellendus atque pariatur aperiam
+        dolorem aliquid, eaque consectetur magni voluptatibus commodi? Id velit
+        quasi temporibus?
+      </p>
+    </article>
 
-    <!-- (div>h1#title${Заголовок $}+p>lorem200)*10 -->
-    <main>
-      <article>
-        <h1 class="red-text" id="title1">Заголовок 1</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
-          quod earum culpa voluptas, ad ipsam quidem reprehenderit tempora nihil
-          quas quae recusandae expedita, deleniti quaerat ea. Delectus numquam
-          nulla, eveniet consequuntur quo cumque expedita facilis!
-        </p>
-      </article>
-      <article>
-        <h1 class="red-text" id="title2">Заголовок 2</h1>
-        <p>
-          Neque aliquam quam amet culpa mollitia repellat voluptate quos soluta.
-          Ullam eum ipsum enim ab in blanditiis quasi velit quod repellat,
-          suscipit corrupti ut. Id saepe nisi cum ex eos, impedit similique
-          dignissimos ducimus fuga soluta ullam deleniti in consequuntur
-          distinctio perferendis autem veritatis facere mollitia porro.
-        </p>
-      </article>
-      <article>
-        <h1 id="title3">Заголовок 3</h1>
-        <p>
-          Repudiandae et cumque inventore veniam beatae quas rem ipsam amet
-          praesentium magni labore tenetur quae dicta qui ipsa debitis excepturi
-          ab officiis, eveniet assumenda facilis ea voluptates nulla minus!
-          Nostrum consectetur dolor voluptates, qui tempora nam minus non,
-          asperiores explicabo, similique repudiandae exercitationem enim quas
-          aliquid perspiciatis earum.
-        </p>
-      </article>
-      <section>
-        <h1 id="title4">Заголовок 4</h1>
-        <p>
-          Ipsa explicabo praesentium molestiae suscipit, quia ab quidem
-          pariatur? Debitis commodi voluptates suscipit hic non provident nemo
-          repellat? Atque unde veritatis non ipsa, modi officiis iste ab natus
-          ducimus dolorum autem rerum delectus aspernatur ex est perferendis
-          porro nihil iure vel cupiditate minima exercitationem inventore nobis?
-          amet.
-        </p>
-      </section>
-      <div>
-        <h1 id="title5">Заголовок 5</h1>
-        <p>
-          Perferendis, dolor nostrum laborum sapiente nemo voluptas quisquam
-          officiis autem sint aliquid eveniet magni? Nam dolorem consequuntur
-          praesentium qui ducimus iusto fuga laudantium deleniti ipsum
-          voluptatum amet vero nisi reprehenderit tenetur ex, illum reiciendis
-          sint velit cupiditate blanditiis sapiente tempore sed quos.
-        </p>
-      </div>
-      <div>
-        <h1 id="title6">Заголовок 6</h1>
-        <p>
-          Error, modi saepe! Possimus veniam rem perspiciatis dolore iusto
-          aperiam iste expedita vitae distinctio dolorem repellat labore numquam
-          nihil, ea, debitis odio sint nam veritatis, provident magnam
-          accusantium quia adipisci! Omnis explicabo neque ex quis. Vero, sequi.
-        </p>
-      </div>
-      <div>
-        <h1 id="title7">Заголовок 7</h1>
-        <p>
-          Eligendi ullam ad tempore quos minima est molestiae deleniti inventore
-          quaerat. Rerum itaque aliquam molestiae sequi dolores, recusandae
-          voluptas aliquid laudantium, sed, expedita maiores. Tempore blanditiis
-          maiores libero exercitationem laudantium, aliquam sunt adipisci qui
-          minima obcaecati neque itaque reprehenderit recusandae quis,
-          laboriosam assumenda dolorem cumque eos ipsum atque amet!
-        </p>
-      </div>
-      <div>
-        <h1 id="title8">Заголовок 8</h1>
-        <p>
-          Beatae fuga et error corrupti fugiat id doloremque neque perspiciatis
-          ab suscipit maxime illum quia sint aut quibusdam temporibus modi
-          placeat, mollitia laudantium molestias debitis, optio repellat
-          repellendus.
-        </p>
-      </div>
-      <div>
-        <h1 id="title9">Заголовок 9</h1>
-        <p>
-          A distinctio laborum aspernatur nisi soluta deserunt ex nihil aut
-          consequatur. Velit earum, tempore facilis hic nesciunt aliquam
-          deleniti minima consequatur in assumenda laudantium repellat odio
-          expedita eum itaque, officiis sequi explicabo quia voluptas reiciendis
-          rem sapiente maxime animi?
-        </p>
-      </div>
-      <div>
-        <h1 id="title10">Заголовок 10</h1>
-        <p>
-          Magnam distinctio aliquid, numquam beatae alias voluptate
-          voluptatibus, eveniet aut maxime harum temporibus voluptatem a
-          aspernatur laboriosam, vel doloremque cumque impedit rerum quod qui!
-        </p>
-      </div>
-    </main>
-    <footer>
-      <p>@2026 автор - Сергій</p>
-    </footer>
+    <button class="btn">кнопка 1</button>
+    <button class="btn">КноПКа 2</button>
   </body>
 </html>
+.
