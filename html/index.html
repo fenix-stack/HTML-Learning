@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна сторінка</title>
+    <style>
+      /* Специфічність селекторів:
+      тег:  001
+      клас: 010
+      айді: 100 */
+
+      p {
+        color: blue;
+      }
+
+      #title1 {
+        color: rgb(76, 151, 32);
+      }
+
+      .red-text {
+        color: green;
+        background-color: rgb(211, 219, 219);
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    </style>
   </head>
+
+  <!-- шістнадцятирична система:
+   0-9 a, b, c, d, e, f -->
+
   <body>
     <!-- ul>(li>a[href=#title$]{До заголовку $})*10 -->
     <header>
@@ -27,22 +54,22 @@
     <!-- (div>h1#title${Заголовок $}+p>lorem200)*10 -->
     <main>
       <article>
-        <h1 id="title1">Заголовок 1</h1>
+        <h1 class="red-text" id="title1">Заголовок 1</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
           quod earum culpa voluptas, ad ipsam quidem reprehenderit tempora nihil
           quas quae recusandae expedita, deleniti quaerat ea. Delectus numquam
-          nulla, eveniet consequuntur quo cumque expedita facilis! 
+          nulla, eveniet consequuntur quo cumque expedita facilis!
         </p>
       </article>
       <article>
-        <h1 id="title2">Заголовок 2</h1>
+        <h1 class="red-text" id="title2">Заголовок 2</h1>
         <p>
           Neque aliquam quam amet culpa mollitia repellat voluptate quos soluta.
           Ullam eum ipsum enim ab in blanditiis quasi velit quod repellat,
           suscipit corrupti ut. Id saepe nisi cum ex eos, impedit similique
           dignissimos ducimus fuga soluta ullam deleniti in consequuntur
-          distinctio perferendis autem veritatis facere mollitia porro. 
+          distinctio perferendis autem veritatis facere mollitia porro.
         </p>
       </article>
       <article>
@@ -53,7 +80,7 @@
           ab officiis, eveniet assumenda facilis ea voluptates nulla minus!
           Nostrum consectetur dolor voluptates, qui tempora nam minus non,
           asperiores explicabo, similique repudiandae exercitationem enim quas
-          aliquid perspiciatis earum. 
+          aliquid perspiciatis earum.
         </p>
       </article>
       <section>
@@ -94,7 +121,7 @@
           voluptas aliquid laudantium, sed, expedita maiores. Tempore blanditiis
           maiores libero exercitationem laudantium, aliquam sunt adipisci qui
           minima obcaecati neque itaque reprehenderit recusandae quis,
-          laboriosam assumenda dolorem cumque eos ipsum atque amet! 
+          laboriosam assumenda dolorem cumque eos ipsum atque amet!
         </p>
       </div>
       <div>
@@ -103,7 +130,7 @@
           Beatae fuga et error corrupti fugiat id doloremque neque perspiciatis
           ab suscipit maxime illum quia sint aut quibusdam temporibus modi
           placeat, mollitia laudantium molestias debitis, optio repellat
-          repellendus. 
+          repellendus.
         </p>
       </div>
       <div>
@@ -113,7 +140,7 @@
           consequatur. Velit earum, tempore facilis hic nesciunt aliquam
           deleniti minima consequatur in assumenda laudantium repellat odio
           expedita eum itaque, officiis sequi explicabo quia voluptas reiciendis
-          rem sapiente maxime animi? 
+          rem sapiente maxime animi?
         </p>
       </div>
       <div>
