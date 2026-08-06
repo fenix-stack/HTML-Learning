@@ -1,21 +1,25 @@
-.article {
-background-color: cornflowerblue;
+*{
+ box-sizing: border-box;
 }
 
-.article-heading {
-font-size: 36px;
-text-align: center;
+.img  {
+ display: block;
+  border: 10px solid red;
+  /* padding: 10px 20px 30px 40px; - по годинниковій стрілці*/ 
+  /* padding: 10px 20px; - верх-низ, право-ліво*/
+  /* padding: 10px 20px 30px; - верх, право-ліво, низ*/
+  padding: 10px 20px 30px 40px;
+  margin: 3cqw;
+  width: 260px;
+  height: 180px;
 }
 
-.article-text {
-font-size: 24px;
-line-height: 1.2em;
-text-align: justify;
-color: blue;
-text-decoration: underline;
-cursor: pointer;
+.wrapper  {
+  border: 10px solid springgreen;
+  width: 600px;
 }
+.par {
+  border: 5px solid;
 
-.btn {
-  text-transform: uppercase
+  width: 50%;
 }
