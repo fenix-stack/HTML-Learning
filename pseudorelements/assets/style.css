@@ -4,3 +4,105 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(37, 36, 35);
+}
+
+div {
+  display: inline-block;
+  width: 100%;
+  margin: 100px auto;
+  padding-left: 20px;
+}
+p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p:nth-child(3) {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.card1 {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  padding: 30px;
+  margin-left: 30px;
+  background: linear-gradient(
+    51deg,
+    rgba(251, 63, 232, 0.85) 28%,
+    rgba(221, 41, 123, 1) 68%,
+    rgba(235, 131, 154, 1) 84%
+  );
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card2 {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  padding: 30px;
+  margin-left: 30px;
+  background: linear-gradient(
+    51deg,
+    rgba(63, 160, 251, 0.85) 28%,
+    rgba(221, 41, 123, 1) 68%,
+    rgb(131, 193, 235) 84%
+  );
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card3 {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  padding: 30px;
+  margin-left: 30px;
+  background: linear-gradient(
+    51deg,
+    rgba(4, 124, 54, 0.85) 28%,
+    rgb(127, 219, 6) 68%,
+    rgba(235, 211, 131, 0.788) 84%
+  );
+  border-radius: 12px;
+  overflow: hidden;}
+
+.card1::before,
+.card1::after,
+.card2::before,
+.card2::after,
+.card3::before,
+.card3::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.281);
+}
+
+.card1::before,
+.card2::before,
+.card3::before {
+  top: -10px;
+  left: 300px;
+  overflow: hidden;
+}
+
+.card1::after,
+.card2::after,
+.card3::after {
+  top: 140px;
+  left: 220px;
+}
+.symbol {
+  position: absolute;
+  left: 330px;
+  z-index: 2;
+}
